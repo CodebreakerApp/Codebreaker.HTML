@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Codebreaker Game – crack the color code in this modern puzzle game" />
+    <meta name="theme-color" content="#667eea" />
+    <title>Codebreaker Game</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Codebreaker Game</h1>
+      <p>Crack the code and win!</p>
+    </header>
+
+    <main>
+      <section id="game-setup" class="game-setup">
+        <h2>Start a New Game</h2>
+        <form id="setup-form" class="setup-form">
+          <div class="form-group">
+            <label for="player-name">Player Name:</label>
+            <input
+              type="text"
+              id="player-name"
+              name="playerName"
+              required
+              placeholder="Enter your name"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="game-type">Game Type:</label>
+            <select id="game-type" name="gameType" required aria-required="true">
+              <option value="">Select a game type</option>
+              <option value="Game6x4">Game 6x4 (6 colors, 4 holes)</option>
+              <option value="Game6x4Mini">Game 6x4 Mini</option>
+              <option value="Game8x5">Game 8x5 (8 colors, 5 holes)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Start Game</button>
+        </form>
+      </section>
+
+      <section id="game-playground" class="game-playground" hidden>
+        <h2>Game Board</h2>
+
+        <div class="game-info">
+          <p>Player: <span id="current-player">-</span></p>
+          <p>Game Type: <span id="current-game-type">-</span></p>
+          <p>Moves Left: <span id="moves-left">-</span></p>
+        </div>
+
+        <div id="color-selector" class="color-selector-section">
+          <h3>Available Colors</h3>
+          <div id="color-palette" class="color-palette">
+            <!-- Color options will be added dynamically -->
+          </div>
+        </div>
+
+        <div class="game-board-area">
+          <div id="current-move" class="current-move">
+            <h3>Current Move</h3>
+            <div id="current-move-row">
+              <!-- Current move row will be added dynamically -->
+            </div>
+          </div>
+
+          <div id="game-board" class="game-board">
+            <h3>Your Moves</h3>
+            <div id="moves-container" class="moves-container">
+              <!-- Game rows will be added dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <button id="submit-move" class="btn btn-primary" disabled>Submit Move</button>
+          <button id="new-game" class="btn btn-secondary">New Game</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Codebreaker Game Workshop</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

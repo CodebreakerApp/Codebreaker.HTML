@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "Codebreaker.Backend.AppHost/Codebreaker.Backend.AppHost.csproj"
+  }
+}

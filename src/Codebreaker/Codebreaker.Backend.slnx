@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Codebreaker.Backend.AppHost/Codebreaker.Backend.AppHost.csproj" Id="ac1b2f46-31d5-4649-9583-a976cf3da18a" />
+  <Project Path="Codebreaker.Backend.ServiceDefaults/Codebreaker.Backend.ServiceDefaults.csproj" />
+  <Project Path="CodeBreaker.Bot/CodeBreaker.Bot.csproj" />
+  <Project Path="Codebreaker.GameAPIs/Codebreaker.GameAPIs.csproj" />
+</Solution>
